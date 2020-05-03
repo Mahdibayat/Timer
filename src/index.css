@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@700&display=swap');
+*{
+  font-size: 20pt;
+  font-family: 'Changa', sans-serif;
+  text-shadow: 0 0 2px whitesmoke;
+}
+body {
+  background-image: linear-gradient(35deg, deepskyblue, #008ae6);
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+}
+input{
+  background: none;
+  text-align: center;
+  pointer-events: none;
+  border: none;
+  font-size: 25pt;
+}
+button{
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+button:active{
+  transition: 100ms;
+  transform: scale(0.95);
+}
+#flexiv{
+  display: flex;
+  justify-content: center;
+}
+#flexiv > div{
+  margin: 0 20px;
+}
+#tik{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+#bordering{
+  border: solid 4px black;
+  border-radius: 15px;
+  width: fit-content;
+  padding: 0 15px;
+  margin: 25px auto;
+  box-shadow: 0 0 12px black;
+}
+.goLeft{
+  position: relative;
+  right: 22px;
+}
+#leftOfLeft{
+  margin-left: 25px;
+}
+#TikTak{
+  font-size: 20pt;
+  animation-name: unset;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes tiktok{
+  50%{
+    opacity: 0;
+  }
+}
+#min{
+  text-align: right;
+  position: relative;
+  left: 14px;
+}
+#author{
+  margin: 50px auto 5px auto;
+}
+#break-decrement ,#break-increment, #session-decrement,#session-increment{
+  position: relative;
+  top:5px;
+}
